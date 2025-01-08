@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عن السعودية</title>
+<style>
+  /* General Styling */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+  }
+
+  body {
+    line-height: 1.6;
+    background-color: #f4f4f9;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  /* Navbar Styling */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .navbar ul li {
+    cursor: pointer;
+  }
+
+  .navbar ul li:hover {
+    color: #f1c40f;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: 60vh;
+    background: url('https://images.unsplash.com/photo-1576085898735-f72f433d45b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  /* Sections */
+  section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #666;
+  }
+
+  .cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card h3 {
+    font-size: 1.5rem;
+    margin: 15px;
+  }
+
+  .card p {
+    font-size: 1rem;
+    margin: 15px;
+    color: #666;
+  }
+
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .footer p {
+    margin-bottom: 10px;
+  }
+
+  .footer a {
+    color: #f1c40f;
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">عن السعودية</div>
+  <ul>
+    <li><a href="page3.html" target="_blank"> الرئيسية </a></li>
+    <li><a href="page4.html" target="_blank">عن السعودية</a></li>
+    <li><a href="contactus.html" target="_blank">تواصل معنا </a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero" style="background-color: #daba3854; color: #333;">
+  <div>
+    <h1>تعرف على المملكة العربية السعودية</h1>
+  </div>
+</div>
+
+
+<!-- History Section -->
+<section>
+  <h2>التاريخ والثقافة</h2>
+  <p>تُعد السعودية مهد الحضارة الإسلامية وموطن الأماكن المقدسة، مكة المكرمة والمدينة المنورة.</p>
+  <div class="cards">
+    <div class="card">
+      <img src="img5.jpg" alt="Historic Diriyah">
+      <h3>الدرعية التاريخية</h3>
+      <p>استمتع بجولة في الدرعية، العاصمة الأولى للمملكة والمرشحة ضمن قائمة التراث العالمي.</p>
+    </div>
+    <div class="card">
+      <img src="image2" alt="Cultural Sites">
+      <h3>المواقع الثقافية</h3>
+      <p>زوروا المواقع الأثرية مثل مدائن صالح التي تعكس التاريخ الغني للمملكة.</p>
+    </div>
+    <div class="card">
+      <img src="toras.jpg" alt="Islamic Heritage">
+      <h3>التراث الإسلامي</h3>
+      <p>الحج والعمرة من أهم التجارب الروحانية التي توفرها المملكة.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Vision Section -->
+<section>
+  <h2>رؤية السعودية 2030</h2>
+  <p>رؤية المملكة 2030 تهدف إلى بناء مجتمع نابض بالحياة واقتصاد مزدهر ووطن طموح.</p>
+  <div class="cards">
+    <div class="card">
+      <img src="neom.jpg" alt="Neom City">
+      <h3>مشروع نيوم</h3>
+      <p>مدينة المستقبل التي تسعى المملكة لإنشائها بأحدث الابتكارات.</p>
+    </div>
+    <div class="card">
+      <img src="green.jpg" alt="Green Initiative">
+      <h3>المبادرة الخضراء</h3>
+      <p>جهود المملكة في زراعة الأشجار والمحافظة على البيئة.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2025 جميع الحقوق محفوظة - عن السعودية</p>
+  <p><a href="#">سياسة الخصوصية</a> | <a href="#">الشروط والأحكام</a></p>
+</footer>
+
+</body>
+</html>

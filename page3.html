@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الصفحة الرئيسية</title>
+<style>
+  /* General Styling */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+  }
+
+  body {
+    line-height: 1.6;
+    background-color: #f4f4f9;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  /* Navbar Styling */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .navbar ul li {
+    cursor: pointer;
+  }
+
+  .navbar ul li:hover {
+    color: #f1c40f;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    background: url('bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .hero button {
+    padding: 10px 20px;
+    background: #f1c40f;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .hero button:hover {
+    background: #d4ac0d;
+  }
+
+  /* Sections */
+  section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #666;
+  }
+
+  .section-dark {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .section-light {
+    background-color: #f4f4f9;
+  }
+
+  /* Cards Section */
+  .cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card h3 {
+    font-size: 1.5rem;
+    margin: 15px;
+  }
+
+  .card p {
+    font-size: 1rem;
+    margin: 15px;
+    color: #666;
+  }
+
+  .card button {
+    width: 90%;
+    margin: 15px;
+    padding: 10px;
+    background: #f1c40f;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .card button:hover {
+    background: #d4ac0d;
+  }
+
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .footer p {
+    margin-bottom: 10px;
+  }
+
+  .footer a {
+    color: #f1c40f;
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">السعودية ترحب بكم</div>
+  <ul>
+    <li><a href="page3.html" target="_blank"> الرئيسية </a></li>
+    <li><a href="page4.html" target="_blank">عن السعودية</a></li>
+    <li><a href="contactus.html" target="_blank">تواصل معنا </a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+  <div>
+    <h1>مرحباً بكم في المملكة العربية السعودية</h1>
+    <p>استكشف الجمال، التراث، والثقافة في قلب الشرق الأوسط.</p>
+    <button onclick="window.location.href='https://www.saudiembassy.net/about-saudi-arabia';">اقرأ المزيد</button>
+
+  </div>
+</div>
+
+<!-- About Section -->
+<section class="section-light">
+  <h2>عن السعودية</h2>
+  <p>السعودية هي موطن الثقافة العربية والإسلامية، تجمع بين التراث العريق والرؤية المستقبلية.</p>
+  <div class="cards">
+    <div class="card">
+      <img src="img.jpg" alt="Card Image">
+      <h3>الثقافة والتراث</h3>
+      <p>استكشف المواقع الأثرية الغنية والتقاليد الأصيلة.</p>
+      <button onclick="window.location.href='https://www.saudiembassy.net/about-saudi-arabia';">اقرأ المزيد</button>
+
+    </div>
+    <div class="card">
+      <img src="img2.jpg" alt="Card Image">
+      <h3>المعالم السياحية</h3>
+      <p>زوروا المدن الحديثة والصحارى الخلابة.</p>
+      <button onclick="window.location.href='https://www.saudiembassy.net/about-saudi-arabia';">اقرأ المزيد</button>
+
+    </div>
+    <div class="card">
+      <img src="img3.jpg" alt="Card Image">
+      <h3>الرؤية 2030</h3>
+      <p>تعرف على رؤية السعودية المستقبلية والمشاريع الكبرى.</p>
+      <button onclick="window.location.href='https://www.saudiembassy.net/about-saudi-arabia';">اقرأ المزيد</button>
+
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="section-dark">
+  <h2>خدماتنا</h2>
+  <p>نوفر لك مجموعة من الخدمات لمساعدتك خلال زيارتك للسعودية.</p>
+  <div class="cards">
+    <!-- Tourist Guide -->
+    <div class="card">
+      <img src="img4.jpg" alt="Tourist Guide">
+      <h3>الدليل السياحي</h3>
+      <p>كل ما تحتاج لمعرفته عن الأماكن والفعاليات.</p>
+    </div>
+    <!-- Travel Facilitation -->
+    <div class="card">
+      <img src="img5.jpg" alt="Travel Facilitation">
+      <h3>تسهيلات السفر</h3>
+      <p>دعم كامل لتجربة سفر مريحة.</p>
+    </div>
+    <!-- Recreational Activities -->
+    <div class="card">
+      <img src="img6.jpg" alt="Recreational Activities">
+      <h3>الأنشطة الترفيهية</h3>
+      <p>استمتع بتجارب وأنشطة لا تنسى.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2025 جميع الحقوق محفوظة - السعودية ترحب بكم</p>
+  <p><a href="#">سياسة الخصوصية</a> | <a href="#">الشروط والأحكام</a></p>
+</footer>
+
+<script>
+  // Add JavaScript functionality if needed (e.g., smooth scrolling)
+</script>
+</body>
+</html>
