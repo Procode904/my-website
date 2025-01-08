@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تسجيل الدخول للزوار في السعودية</title>
+<style>
+  /* Same CSS as before */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+  }
+
+  body {
+    background: url(bg.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+  }
+
+  .login-container {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .login-container h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #f1c40f;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+
+  .form-group input::placeholder {
+    color: #ccc;
+  }
+
+  .form-group input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #f1c40f;
+  }
+
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #f1c40f;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .login-btn:hover {
+    background: #d4ac0d;
+    color: #fff;
+  }
+
+  .message {
+    margin-top: 20px;
+  }
+
+  .message a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .message a:hover {
+    text-decoration: underline;
+  }
+
+  /* Media Query for Mobile */
+  @media (max-width: 500px) {
+    .login-container h1 {
+      font-size: 2rem;
+    }
+
+    .form-group label {
+      font-size: 1rem;
+    }
+
+    .login-btn {
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="login-container">
+  <h1>مرحباً بكم في السعودية</h1>
+  <form id="loginForm">
+    <div class="form-group">
+      <label for="email">البريد الإلكتروني</label>
+      <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+    </div>
+    <div class="form-group">
+      <label for="password">كلمة المرور</label>
+      <input type="password" id="password" placeholder="أدخل كلمة المرور" required>
+    </div>
+    <button type="submit" class="login-btn">تسجيل الدخول</button>
+  </form>
+  <div class="message">
+    ليس لديك حساب؟ <a href="page2.html">إنشاء حساب جديد</a>
+  </div>
+</div>
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent default form submission
+    alert('تم تسجيل الدخول بنجاح!');
+    window.location.href = 'page3.html'; // Redirect to page3.html
+  });
+</script>
+</body>
+</html>
